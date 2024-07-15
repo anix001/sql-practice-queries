@@ -1,0 +1,1 @@
+select avg(amount_spent) as avg_amount, date, DATE_PART('week', date) as week_number from user_purchases where day_name = 'Friday' group by date;
